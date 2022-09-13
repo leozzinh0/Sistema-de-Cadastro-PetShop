@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Classes;
+package Model;
 
 /**
  *
@@ -14,6 +14,9 @@ public class Cliente {
     private String telefone;
     private Long cep;
     private String email;
+    private Cliente[] clt = new Cliente[90];
+    private Animal[] ani = new Animal[];
+    private int index;
 
     public Cliente(String nome, String end, String telefone, Long cep, String email) {
         this.nome = nome;
@@ -62,10 +65,9 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    
-    
-    
-}
+   
 
 
+    }
+
+    
